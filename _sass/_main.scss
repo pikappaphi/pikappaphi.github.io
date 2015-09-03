@@ -1,0 +1,77 @@
+// Main
+
+header#primary {
+	position: relative;
+	height: 100%;
+
+	.text-container {
+		margin: 0 auto;
+		text-align: center;
+		top: 50%;
+		left: 0;
+		right: 0;
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	h1 {
+		font-size: 72px;
+		text-transform: uppercase;
+		color: #FFF;
+		letter-spacing: .05px;
+		text-shadow: 0 0 3px rgba(0,0,0,.15);
+		span {
+			display: inline-block;
+			-webkit-animation: 1.5s pulse infinite ease-in-out;
+			animation: 10s pulse infinite ease-in-out;
+			@for $i from 1 through 12 {
+				&:nth-child(#{$i}){
+					$d: $i * .09s;
+					-webkit-animation-delay: $d;
+					animation-delay: $d;
+				}
+			}
+		}
+		@media (max-width: 1199px) {
+			font-size: 60px;
+		}
+		@media (max-width: 991px) {
+			font-size: 50px;
+		}
+		@media (max-width: 767px) {
+			font-size: 30px;
+		}
+	}
+}
+
+.logo-wrap {
+	display: block;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.starshield {
+	width: 100%;
+	height: auto;
+
+	&--star {
+		fill: $color--star;
+	}
+	&--shield {
+		fill: $color--shield;
+	}
+
+	button & {
+		max-width: 100px;
+		position: fixed;
+		z-index: 2;
+		.starshield--star {
+			fill: $gold;
+		}
+		.starshield--shield {
+			fill: $blue;
+		}
+	}
+}

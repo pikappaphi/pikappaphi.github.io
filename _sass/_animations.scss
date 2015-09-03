@@ -1,0 +1,27 @@
+// Animations
+
+@-webkit-keyframes pulse {
+	0%, 10%, 100% {
+		text-shadow: 0 0 3px rgba(0,0,0,.15);
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1) translateY(0px);
+	}
+	5% {
+		text-shadow: 0 6px 3px rgba(0,0,0,.20);
+		-webkit-transform: scale(1.1) translateY(-9px);
+		transform: scale(1.1) translateY(-9px);
+	}
+}
+
+@keyframes pulse {
+	0%, 10%, 100% {
+		text-shadow: 0 0 3px rgba(0,0,0,.15);
+		-webkit-transform: scale(1) translateY(0px);
+		transform: scale(1) translateY(0px);
+	}
+	5% {
+		text-shadow: 0 6px 3px rgba(0,0,0,.20);
+		-webkit-transform: scale(1.1) translateY(-9px);
+		transform: scale(1.1) translateY(-9px);
+	}
+}

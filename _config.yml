@@ -1,0 +1,18 @@
+# Setup
+
+title:            		Pi Kappa Phi
+baseurl: 				""
+
+permalink:           	pretty
+relative_permalinks: 	true
+
+# Dependencies
+
+markdown:         		redcarpet
+highlighter:      		pygments
+
+# SCSS
+
+sass:
+  sass_dir: _sass
+  style: :compressed
