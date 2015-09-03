@@ -43,6 +43,11 @@ header#primary {
 		@media (max-width: 767px) {
 			font-size: 30px;
 		}
+		
+		.error404 & {
+			color: #333;
+			text-shadow: none;
+		}
 	}
 }
 
